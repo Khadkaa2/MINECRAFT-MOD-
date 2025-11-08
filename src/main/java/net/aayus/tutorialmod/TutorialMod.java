@@ -1,5 +1,7 @@
 package net.aayus.tutorialmod;
 
+import net.aayus.tutorialmod.block.ModBlocks;
+import net.aayus.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -20,5 +22,7 @@ public class TutorialMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+        ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
